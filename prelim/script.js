@@ -104,6 +104,7 @@ document.getElementById("saveUser").addEventListener("click", () => {
   document.getElementById("editUser").classList.remove("d-none");
 });
 
+//replaced generate button
 document.getElementById("userCount").addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     fetchUsers();
