@@ -73,7 +73,6 @@ function openModal(index) {
   new bootstrap.Modal(document.getElementById("userModal")).show();
 }
 
-// Delete user
 document.getElementById("deleteUser").addEventListener("click", () => {
   if (currentUserIndex !== null) {
     usersData.splice(currentUserIndex, 1);
@@ -82,14 +81,12 @@ document.getElementById("deleteUser").addEventListener("click", () => {
   }
 });
 
-// Edit user
 document.getElementById("editUser").addEventListener("click", () => {
   document.querySelectorAll("#modalFields .bubble-field").forEach(el => el.contentEditable = "true");
   document.getElementById("saveUser").classList.remove("d-none");
   document.getElementById("editUser").classList.add("d-none");
 });
 
-// Save user
 document.getElementById("saveUser").addEventListener("click", () => {
   const updatedUser = usersData[currentUserIndex];
 
@@ -107,7 +104,6 @@ document.getElementById("saveUser").addEventListener("click", () => {
   document.getElementById("editUser").classList.remove("d-none");
 });
 
-// Trigger fetchUsers() when pressing Enter
 document.getElementById("userCount").addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     fetchUsers();
