@@ -22,6 +22,7 @@ input {
   outline: none;
   text-align: center;    
   width: 300px;           
+  border: 1px solid #000;
 }
 
 button, select, .header {
@@ -29,16 +30,8 @@ button, select, .header {
   margin: 10px;
   border-radius: 15px;
   outline: none;
-}
-
-button {
-  background: #9756aa;
-  color: white;
-  outline-color: none;
+  border: none;
   cursor: pointer;
-}
-button:hover {
-  background:#9756aa;
 }
 
 .headers {
@@ -49,8 +42,9 @@ button:hover {
 }
 
 .header, select {
-  background: #f1f1f1;
+  background: #a886aa;
   font-weight: bold;
+  color: white;
 }
 
 #users {
@@ -63,6 +57,7 @@ button:hover {
 #users div {
   width: 150px;
   text-align: center;
+  cursor: pointer;
 }
 
 #users div p {
@@ -72,4 +67,24 @@ button:hover {
 .error {
   color: red;
   margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Modal bubble card style */
+.bubble-card {
+  background: #876488;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.bubble-field {
+  background: #f1f1f1;
+  border-radius: 30px;
+  padding: 8px 15px;
+  margin: 10px auto;
+  display: inline-block;
+  color: black;
+  min-width: 70%;
+  text-align: left;
 }
